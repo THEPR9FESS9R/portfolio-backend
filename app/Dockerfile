@@ -1,3 +1,8 @@
-FROM nginx:alpine
+FROM node:8.10.0
 
-COPY index.html /usr/share/nginx/html
+WORKDIR /app
+COPY package.json /app
+RUN npm install
+COPY . /app
+CMD node index.js
+EXPOSE 8082
