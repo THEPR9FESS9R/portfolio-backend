@@ -1,8 +1,9 @@
-FROM node:8.10.0
+FROM node:11.9.0
 
 WORKDIR /app
 COPY package.json /app
-RUN npm install
+RUN npm install -g yarn
+RUN yarn install
 COPY . /app
 CMD node index.js
-EXPOSE 8082
+EXPOSE 8081

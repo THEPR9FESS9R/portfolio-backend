@@ -8,5 +8,4 @@ app.get('/', (req, res) => {
 });
 
 app.listen(80, () => {
-    console.log('app listening on port 8081!')
 });
