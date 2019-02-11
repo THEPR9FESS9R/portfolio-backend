@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:latest
 
 # Removed default confs
 RUN rm /etc/nginx/conf.d/*
