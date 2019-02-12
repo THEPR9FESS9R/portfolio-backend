@@ -4,3 +4,5 @@ FROM nginx:latest
 RUN rm /etc/nginx/conf.d/*
 
 COPY proxy.conf /etc/nginx/conf.d/
+COPY ./certs/localhost.crt /etc/nginx/localhost.crt
+COPY ./certs/localhost.key /etc/nginx/localhost.key

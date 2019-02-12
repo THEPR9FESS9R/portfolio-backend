@@ -3,8 +3,15 @@ version: '2'
 services:
   app:
     build: app
+    volumes:
+      - ./app:/app
+    ports:
+      - "8089:8089"
 
   proxy:
     build: proxy
     ports:
       - "80:80"
+    volumes:
+      - ./app:/app
+      

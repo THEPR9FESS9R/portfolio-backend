@@ -6,4 +6,4 @@ RUN npm install -g yarn
 RUN yarn install
 COPY . /app
 CMD node index.js
-EXPOSE 8081
+EXPOSE 8089
