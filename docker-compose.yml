@@ -1,12 +1,12 @@
 version: '2'
 
 services:
-#   app:
-#     build: app
-#     volumes:
-#       - ./app:/app
-#     ports:
-#       - "8089:8089"
+  app:
+    build: app
+    volumes:
+      - ./app:/app
+    ports:
+      - "8089:8089"
 
   proxy:
     build: proxy
